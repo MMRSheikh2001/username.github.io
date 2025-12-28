@@ -1,0 +1,148 @@
+.ticker-bar{
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    padding: 10px 0;
+}
+.ticker-track{
+    display: inline-flex;
+    animation: ticker-move 40s linear infinite;
+}
+.ticker-track a{
+    color: white;
+    text-decoration: none;
+    padding: 0 50px;
+    font-weight: bold;
+}
+.ticker-bar:hover .ticker-track {
+    animation-play-state: paused;
+    cursor: pointer;
+}
+@keyframes ticker-move{
+    0% {transform: translateX(0);}
+    100%{transform: translateX(-50%);}
+}
+
+/* Navbar CSS to make items same size */
+
+.navbar-nav .nav-items{
+    flex: 1 !important;
+    text-align: center !important;
+}
+
+
+
+/* Blinking Admission Effect */
+@keyframes blink {
+    0%,50%,100% {
+        background-color: red;
+        color: white;
+    }
+    25%,75%{
+        background-color: transparent;
+        color: black;
+    }
+}
+
+.blink-admission{
+    animation: blink 1s infinite;
+    transition: background-color 0.2s;
+}
+
+
+/* Open dropdown on hover */
+.nav-item.dropdown:hover > .dropdown-menu {
+    display: block;
+    margin-top: 0;
+}
+
+/* Keep dropdown visible when hovering inside it */
+.dropdown-menu:hover {
+    display: block;
+}
+
+/* Parent positioning */
+.nav-item.dropdown .dropdown-menu > .dropdown {
+    position: relative;
+}
+
+
+
+/* Doing dropdown for compulsory Subjects */
+ #cDropdown:hover > .dropdown-menu{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    margin: 0;
+    z-index: 1000;
+
+}
+
+
+#cDropdown .dropdown-menu:hover{
+    display: block;
+}
+
+/* Doing dropdown for  Science*/
+ #sDropdown:hover > .dropdown-menu{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    margin: 0;
+    z-index: 1000;
+
+}
+
+
+ #sDropdown .dropdown-menu:hover{
+    display: block;
+}
+
+
+/* Doing dropdown for Business studies */
+ #bDropdown:hover > .dropdown-menu{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    margin: 0;
+    z-index: 1000;
+
+}
+
+
+ #bDropdown .dropdown-menu:hover{
+    display: block;
+}
+
+
+/* Doing dropdown for Humanities */
+#hDropdown:hover > .dropdown-menu{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    margin: 0;
+    z-index: 1000;
+
+}
+
+
+#hDropdown .dropdown-menu:hover{
+    display: block;
+}
+
+/* Background Image css */
+
+.bg {
+    height: 20vh;
+    
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: yellow;
+    
+}
